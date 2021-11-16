@@ -14,10 +14,14 @@
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="0.10.10" />
     <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.10" />
+    <PackageReference Include="Steema.TeeChart.NETCore.WPF" Version="4.2021.2.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\TodoListView.axaml.cs">
       <DependentUpon>TodoListView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AddItemView.axaml.cs">
+      <DependentUpon>AddItemView.axaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>
